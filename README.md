@@ -1,11 +1,4 @@
 # all-ai-projects
-Here’s a polished README.md draft for your GitHub portfolio repo. It explains the closed-source status, documents your current projects, and introduces the 10 Apps in 10 Weeks Challenge with your list of app ideas. You can drop this into the root of your repo so it’s the first thing visitors (and Gauntlet’s AI) see:
-
-⸻
-
-Julian’s AI Projects & 10 Apps in 10 Weeks Challenge
-
-About This Repository
 
 This repository contains descriptions of Julian Stancioff’s AI projects.
 	•	All projects are currently closed-source due to active development, client work, or proprietary frameworks.
