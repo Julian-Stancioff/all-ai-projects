@@ -1,0 +1,187 @@
+Claude Code 4-File Framework Template Prompts
+Initial Questions Template
+Before creating your 4-file framework, answer these questions to help Claude understand your project:
+Project Definition
+What problem does your app solve? (Be specific about the pain point)
+Who is the target user? (Yourself, specific group, everyone?)
+What is your timeline? (1 day, 1 week, 1 month?)
+What platform/device is critical? (iPhone, desktop, both?)
+Core Functionality
+List 3-5 must-have features (What makes this app useful?)
+What can you live without? (Features to cut for speed)
+What's your "definition of done"? (When is v1 complete?)
+Technical Constraints
+What's your technical skill level? (Helps Claude adjust complexity)
+Any required integrations? (Specific services, APIs, databases?)
+Deployment preference? (Vercel, Netlify, self-hosted?)
+Scope Control
+Is this a prototype or production app? (Affects quality tradeoffs)
+Single user or multi-user? (Affects auth and data structure)
+How important is polish vs functionality? (Design priorities)
+
+Prompt 1: PRD (Product Requirements Document)
+Think hard. Help me create a PRD for [APP TYPE] that [CORE FUNCTIONALITY] - optimized for [TARGET PLATFORM] - with [KEY FEATURES].
+
+App identity:
+- Name: [APP NAME]
+- Form factor: [WEB/MOBILE/DESKTOP]
+- Primary use: [MAIN PURPOSE]
+- Timeline: [BUILD TIMELINE]
+
+Target users & jobs:
+- [WHO USES IT]
+- Jobs: [WHAT THEY NEED TO DO]
+
+MVP scope:
+- Must have: [CRITICAL FEATURES]
+- Nice to have: [FEATURES IF TIME]
+- Out of scope: [WHAT TO SKIP]
+
+Core flows:
+- [USER JOURNEY 1]
+- [USER JOURNEY 2]
+- [USER JOURNEY 3]
+
+Technical constraints:
+- Stack: [PREFERRED STACK]
+- Deployment: [WHERE TO DEPLOY]
+- Timeline: [DEADLINE]
+
+Deliverables:
+Create a concise, implementation-ready PRD with these sections:
+1. Problem & goals
+2. Users & jobs
+3. In-scope (MVP) vs out-of-scope
+4. Information architecture & routes
+5. UX requirements
+6. System architecture
+7. Data model
+8. Acceptance criteria
+9. Technical decisions
+10. Build order/milestones
+
+Keep it lean and actionable. This is for Claude Code to build quickly. Cut anything that isn't essential for v1.
+
+
+Prompt 2: CLAUDE.md File
+Think hard. Now generate a CLAUDE.md file from this PRD that will guide future Claude Code sessions on this project.
+
+This file should include:
+
+1. Critical session rules that Claude Code MUST follow every time:
+   - How to start each session (reading planning.md, tasks.md)
+   - File management rules (check before creating)
+   - Task management protocol (how to mark complete)
+   - Development workflow (TDD or speed-first)
+
+2. Code standards appropriate for the timeline:
+   - If 1-day build: relaxed standards, any types OK
+   - If production: strict standards required
+   - Component patterns to follow
+   - State management approach
+
+3. Project-specific guidelines:
+   - Tech stack patterns
+   - Common code snippets
+   - Error handling approach
+   - Testing requirements (or lack thereof)
+
+4. Session management:
+   - How to handle context limits
+   - Session summary template
+   - What to document
+
+5. Common pitfalls to avoid
+
+Make sure this file keeps Claude Code on track and prevents it from over-engineering or going rogue. The goal is consistent, focused development sessions.
+
+
+Prompt 3: PLANNING.md File
+Think hard. Create a planning.md file that includes:
+* vision
+* architecture  
+* technology stack
+* required tools list
+
+Structure it as:
+
+1. Project Vision
+   - Mission statement (1-2 sentences)
+   - Core principles (what matters most)
+   - Success metrics (how we know it's working)
+
+2. Architecture (keep it simple)
+   - High-level system overview
+   - Directory structure
+   - No complex patterns unless necessary
+
+3. Technology Stack
+   - Core dependencies (minimal)
+   - What we're using and why
+   - What we're NOT using (to avoid scope creep)
+
+4. Required Tools & Setup
+   - Minimum requirements
+   - Quick setup commands
+   - Configuration steps
+   - Deployment process
+
+5. Development Approach
+   - Hour-by-hour plan (if applicable)
+   - Copy-paste templates
+   - Quick decision matrix
+
+Remember: This is for [TIMELINE] build. Every decision should optimize for [SPEED/QUALITY]. Include only what's needed to ship v1.
+
+
+Prompt 4: TASKS.md File
+Think hard. Create a tasks.md file with bullet point tasks divided into milestones for building this app.
+
+Requirements:
+- Break into time-based milestones (Hour X, Day X, or Week X based on timeline)
+- Each task should be 5min - 2hr max
+- Include time estimates [5m], [30m], [1h], [2h]
+- Mark priority: 🔴 Critical, 🟡 High, 🟢 Normal, ⚪ Skip
+
+Structure:
+
+## Milestone 1: [FOUNDATION]
+*Goal: [What works after this milestone]*
+- [ ] Task with [TIME]
+- [ ] Task with [TIME]
+
+## Milestone 2: [CORE FEATURE 1]
+*Goal: [What works after this milestone]*
+- [ ] Task with [TIME]
+
+[Continue for all milestones]
+
+## If Time Permits (Bonus)
+- [ ] Nice to have features
+
+## Skip These (Too Complex)
+- [ ] [SKIP] Features to avoid
+
+## Emergency Shortcuts
+- If running out of time, do X instead of Y
+
+## Copy-Paste Code Blocks
+[Include helpful code snippets]
+
+Total the tasks and time at the bottom. Be realistic about what can be built in [TIMELINE].
+
+
+How to Use This Framework
+First: Answer the initial questions to clarify your project
+Second: Use your answers to fill in the variables in each prompt
+Third: Give Claude each prompt in order (PRD → CLAUDE.md → PLANNING.md → TASKS.md)
+Fourth: Save all 4 files in your project root
+Fifth: Start Claude Code with: "Please read planning.md, claude.md, and tasks.md to understand the project. Then complete the first task from tasks.md."
+Pro Tips:
+For 1-day builds: Emphasize speed over quality in all prompts
+For production apps: Add testing and quality requirements
+Always include "Think hard" - it improves Claude's output
+Keep the PRD under 2000 words for best results
+Update tasks.md as you discover new requirements
+This framework ensures Claude Code stays focused, doesn't hallucinate features, and builds exactly what you need.
+
