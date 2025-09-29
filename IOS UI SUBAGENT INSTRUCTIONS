@@ -1,0 +1,99 @@
+iOS UI Expert Subagent - Template Instructions
+
+  Subagent Overview
+
+  Name: ios-ui-expert
+  Purpose: Provides visual feedback loops for iOS app development using real screenshots from iOS Simulator
+  Core Innovation: Generates SwiftUI code → builds → deploys → screenshots → analyzes visually → iterates automatically
+
+  What This Subagent Does
+
+  1. Generates modern SwiftUI code with iOS design expertise and accessibility-first approach
+  2. Builds and deploys apps to iOS Simulator using XcodeBuildMCP automation
+  3. Captures real screenshots from live iOS Simulator (not mockups)
+  4. Analyzes visual quality using Claude's vision capabilities to identify spacing, typography, accessibility, and design issues
+  5. Iterates automatically up to 3 times to fix identified issues
+  6. Returns polished results with final code + before/after screenshots
+
+  Tools Available to Subagent
+
+  XcodeBuildMCP Tools (complete iOS development automation):
+  - Project scaffolding and workspace creation
+  - Build automation for iOS Simulator
+  - Simulator management (boot, install, launch apps)
+  - Screenshot capture from live simulators
+  - UI automation (tap, swipe, type interactions)
+  - Multi-device testing (iPhone, iPad, different screen sizes)
+  - App lifecycle management
+
+  Performance Metrics (Validated)
+
+  - Complete feedback loop: 15-20 seconds per iteration
+  - Screenshot quality: High-resolution, analyzable images
+  - Success rate: 100% reliability in testing
+  - Multi-device support: Automatic scaling across iPhone/iPad sizes
+
+  Integration with Your 4-File Template System
+
+  PLANNING.md Considerations
+
+  - Include "iOS UI visual feedback loop" as core development approach
+  - Plan for 3-iteration maximum polish cycles per screen
+  - Account for accessibility-first design validation
+  - Consider multi-device testing in development phases
+
+  PRD.md Considerations
+
+  - Specify iOS design requirements using iOS Human Interface Guidelines
+  - Include accessibility requirements (contrast, touch targets ≥44pt, readable fonts)
+  - Define visual quality criteria and acceptance standards
+  - Plan for screenshot-based design validation
+
+  TASKS.md Integration
+
+  - Use ios-ui-expert subagent for all SwiftUI screen creation tasks
+  - Delegate UI polish and accessibility validation to subagent
+  - Include visual feedback loop iterations in task estimates
+  - Plan for before/after screenshot documentation
+
+  CONTEXT_SUMMARY.md Usage
+
+  - Document visual design decisions and iterations made by subagent
+  - Track accessibility improvements and design quality scores
+  - Maintain screenshot history for design progression tracking
+  - Record any visual design patterns established by the subagent
+
+  When to Use This Subagent
+
+  - Always use for: SwiftUI screen creation, UI component development, accessibility improvements
+  - Proactively use for: Visual design polish, cross-device validation, design consistency checks
+  - Don't use for: Backend logic, data models, non-UI code (use appropriate specialized agents instead)
+
+  Expected Workflow
+
+  User: "Create a fitness tracking dashboard screen"
+  ↓
+  Template creates 4 files with ios-ui-expert tasks
+  ↓
+  ios-ui-expert subagent:
+  1. Generates SwiftUI dashboard code
+  2. Builds → deploys → screenshots on iPhone simulator
+  3. Analyzes: spacing, typography, accessibility, visual hierarchy
+  4. Refines code to fix identified issues
+  5. Repeats up to 3 iterations
+  6. Returns final polished code + screenshots
+  ↓
+  User receives production-ready SwiftUI with visual validation
+
+  Key Advantages for Your Template
+
+  - No complex setup needed - XcodeBuildMCP handles all iOS complexity
+  - Real visual validation - Actual iOS Simulator screenshots, not theoretical
+  - Accessibility-first - Automatically identifies and fixes accessibility issues
+  - Fast iteration - 15-20 second feedback loops enable rapid polish
+  - Multi-device ready - Automatic testing across iPhone/iPad sizes
+  - Production quality - Returns code that looks and works like native iOS apps
+
+  This subagent eliminates the need for manual iOS development setup and provides "eyes" for Claude Code to see and improve iOS UIs
+  iteratively.
+
