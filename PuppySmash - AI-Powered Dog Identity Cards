@@ -1,0 +1,66 @@
+PuppySmash - AI-Powered Dog Identity Cards
+
+  Transform your dog's photo into a shareable identity card that celebrates their unique story.
+
+  PuppySmash is an iOS app that uses advanced AI to analyze dog photos and generate beautiful, shareable identity cards showing breed mix, age estimation,
+  rarity scores, and uniqueness statistics. Built with SwiftUI and powered by cutting-edge machine learning APIs, it delivers a delightful experience for dog
+  owners to discover and share what makes their pet special.
+
+  Key Features
+
+  🎯 Advanced AI Analysis
+  - Precise breed detection using NANOBANANA API for superior accuracy
+  - Multi-factor age estimation combining facial features, body proportions, and breed context
+  - Smart uniqueness scoring with celebratory language (no negative messaging about mixed breeds)
+  - Local Vision framework integration for instant dog detection
+
+  📱 Native iOS Experience
+  - SwiftUI-first architecture with 60 FPS performance
+  - Seamless camera and photo library integration
+  - Works completely offline for core features
+  - Firebase integration for cloud sync and account management
+
+  🎨 Beautiful Share Cards
+  - Customizable identity cards in 9:16 (Stories) and 1:1 (Feed) formats
+  - Multiple themes including Playful and Minimal designs
+  - Toggle data elements on/off for personalization
+  - High-quality export to Photos with proper permissions
+
+  ⚡ Performance Optimized
+  - Sub-5 second photo analysis including API calls
+  - <100MB memory usage during processing
+  - Smart local caching with automatic cleanup
+  - Graceful network handling with offline fallbacks
+
+  Technical Highlights
+
+  Architecture
+  - Clean SwiftUI app structure with MVVM patterns
+  - Reactive state management using @Published and Combine
+  - Modular service layer for analysis, storage, and networking
+  - Comprehensive error handling with user-friendly messaging
+
+  AI Integration
+  - Vision framework for local dog detection and cropping
+  - NANOBANANA API for cloud-based breed classification
+  - Custom algorithms for age estimation and uniqueness scoring
+  - CoreML optimization for on-device processing
+
+  Data & Privacy
+  - Core Data persistence with smart cleanup policies
+  - Firebase Firestore for cloud sync (optional)
+  - Complete privacy controls and transparent data handling
+  - "For entertainment purposes" disclaimers throughout
+
+  Quality Assurance
+  - Comprehensive accessibility support with VoiceOver
+  - Dynamic Type support for all text sizes
+  - Full Dark/Light mode compatibility
+  - Automated visual testing with iOS Simulator validation
+
+  Development Approach
+
+  Built using a visual-first development methodology with real iOS Simulator screenshot validation. The app leverages automated accessibility compliance
+  checking and multi-device consistency testing to ensure a polished user experience across all supported devices.
+
+  The codebase follows strict performance targets and celebrates dogs of all breeds with positive, encouraging language throughout the interface.
