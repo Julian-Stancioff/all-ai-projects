@@ -1,0 +1,66 @@
+
+
+🎵 HouseShare Music App – iOS Conversion Plan
+
+📌 Overview
+
+This project converts the existing Next.js web app into a fully native iOS app built with SwiftUI, while preserving all core features and enhancing the experience with ios-ui-expert for visual polish and accessibility.
+
+The goal: deliver a production-ready iOS app that feels seamless, modern, and App Store–ready.
+
+⸻
+
+🔑 Core Features to Port
+
+From the original web app:
+	•	Music library with search functionality
+	•	Firebase authentication & storage
+	•	Audio playback with position tracking
+	•	Playlist creation & management
+	•	File upload support
+	•	Mini player with playback controls
+
+⸻
+
+📱 iOS Implementation Strategy
+
+1. Project Setup
+	•	Create new SwiftUI project in Xcode
+	•	Integrate Firebase SDK for iOS
+	•	Implement Core Data for local caching
+	•	Configure AVAudioPlayer for audio playback
+
+2. Screen Priorities (SwiftUI + ios-ui-expert)
+	1.	Library View – searchable list of tracks styled with iOS HIG
+	2.	Upload View – iOS document picker for file uploads
+	3.	Player View – full-screen audio player with native controls
+	4.	Playlist View – intuitive list management, swipe gestures
+
+3. iOS-Specific Enhancements
+	•	Background audio playback
+	•	Lock screen media controls
+	•	Native iOS sharing integration
+	•	Offline playback mode
+	•	iCloud Drive integration for uploads
+
+4. Visual Design Process
+
+Leveraging ios-ui-expert:
+	•	Auto-generate SwiftUI code per screen
+	•	Build → Deploy → Screenshot → Analyze → Refine
+	•	Accessibility-first validation (Dynamic Type, VoiceOver)
+	•	Cross-device testing (iPhone + iPad)
+	•	Minimum 3 polish iterations per screen
+
+5. App Store Preparation
+	•	App icons, splash screens, and metadata
+	•	Privacy policy & permissions compliance
+	•	App Store screenshots and preview video
+	•	TestFlight beta distribution
+
+⸻
+
+🎯 Expected Outcome
+
+A production-ready iOS app that mirrors the original web functionality while delivering a native iOS experience, complete with background playback, offline support, and full accessibility compliance — ready for App Store submission.
+
